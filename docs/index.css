@@ -224,3 +224,27 @@ footer {
     margin: 0 .25rem;
   }
 }
+/* Make every image fluid */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hero profile pic: clamp between 100px and 150px, scaling with viewport */
+.hero .profile-pic img {
+  width: clamp(100px, 20vw, 150px);
+}
+
+/* Project thumbnails: limit height so cards stay uniform */
+.project-card img {
+  max-height: 180px;
+  object-fit: cover;
+}
+
+/* On really small phones, shrink project images even more */
+@media (max-width: 480px) {
+  .project-card img {
+    max-height: 140px;
+  }
+}
