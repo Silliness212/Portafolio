@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,103 +9,126 @@
 <body>
   <nav>
     <div class="logo">Mi Portfolio</div>
-    <ul>
+    <button class="menu-toggle" aria-label="Abrir menú">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links">
       <li><a href="#about">Acerca de</a></li>
       <li><a href="#projects">Proyectos</a></li>
       <li><a href="#contact">Contacto</a></li>
     </ul>
   </nav>
 
-  <section class="hero">
-    <div class="profile-pic">
-      <img src="image.png" alt="Your Name" />
-    </div>
-    <h1>Hola, soy Christopher Martinez de la Rosa</h1>
-    <p>Soy estudiante de Ingeniería en Tecnologías y Sistemas de la Información, enfocado en crear experiencias web modernas e intuitivas.</p>
-  </section>
-
-  <section id="about">
-    <h2>Sobre mí</h2>
-    <div class="about-content">
-      <div class="education">
-<h3>Educación</h3>
-<ul>
-  <li><strong>Preparatoria</strong><br>
-      Concluida</li>
-
-  <li><strong>Ingeniería Ejecutiva en Tecnologías y Sistemas de Información</strong><br>
-      Universidad del Valle de México (UVM)<br>
-      En curso – Inicio: septiembre de 2024
-  </li>
-</ul>
+  <main>
+    <section class="hero" id="home">
+      <div class="profile-pic">
+        <img src="image.png" alt="Christopher Martinez de la Rosa" />
       </div>
-      <div class="skills">
-        <h3>Mis habilidades</h3>
-        <ul>
-          <li>HTML, CSS & JavaScript</li>
-          <li>Responsive Design</li>
-          <li>FastAPI & Python</li>
-        </ul>
-      </div>
-      <div class="info">
-        <h3>Información adicional</h3>
-        <ul>
-  <li>Desarrollo web con HTML, CSS y JavaScript.</li>
-  <li>Diseño de interfaces visuales limpias y responsivas.</li>
-  <li>Integración de múltiples proyectos en una estructura organizada.</li>
-  <li>Manejo de contenido y jerarquía visual en páginas web.</li>
-  <li>Comprensión y uso del inglés técnico en entornos digitales.</li>
-        </ul>
-      </div>
-      <div class="languages">
-        <h3>Idiomas</h3>
-        <li>Español: Nativo</li>
-        <li>Inglés: C1</li>        
-        
-    </div>
-  </section>
+      <h1>Hola, soy Christopher Martinez de la Rosa</h1>
+      <p>
+        Soy estudiante de Ingeniería en Tecnologías y Sistemas de la Información,
+        enfocado en crear experiencias web modernas e intuitivas.
+      </p>
+    </section>
 
-  <section id="projects">
-    <h2>Mis Proyectos</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <a href="https://dandc-waterproofing.com" target="_blank">
-          <img src="Project2.png" alt="Project One" />
-          <h3>Prmer Proyecto</h3>
+    <section id="about">
+      <h2>Sobre mí</h2>
+      <div class="about-content">
+        <div class="education">
+          <h3>Educación</h3>
+          <ul>
+            <li>
+              <strong>Preparatoria</strong><br />
+              Concluida
+            </li>
+            <li>
+              <strong>Ingeniería Ejecutiva en Tecnologías y Sistemas de Información</strong><br />
+              Universidad del Valle de México (UVM)<br />
+              En curso – Inicio: septiembre de 2024
+            </li>
+          </ul>
+        </div>
+        <div class="skills">
+          <h3>Mis habilidades</h3>
+          <ul>
+            <li>HTML, CSS &amp; JavaScript</li>
+            <li>Responsive Design</li>
+            <li>FastAPI &amp; Python</li>
+          </ul>
+        </div>
+        <div class="info">
+          <h3>Información adicional</h3>
+          <ul>
+            <li>Desarrollo web con HTML, CSS y JavaScript.</li>
+            <li>Diseño de interfaces visuales limpias y responsivas.</li>
+            <li>Integración de múltiples proyectos en una estructura organizada.</li>
+            <li>Manejo de contenido y jerarquía visual en páginas web.</li>
+            <li>Comprensión y uso del inglés técnico en entornos digitales.</li>
+          </ul>
+        </div>
+        <div class="languages">
+          <h3>Idiomas</h3>
+          <ul>
+            <li>Español: Nativo</li>
+            <li>Inglés: C1</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Mis Proyectos</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <a href="https://dandc-waterproofing.com" target="_blank" rel="noopener">
+            <img src="Project2.png" alt="Proyecto D&C Waterproofing" />
+            <h3>Primer Proyecto</h3>
+          </a>
+          <p>
+            Mi primer proyecto fue una página web responsiva para la compañía
+            D&amp;C Waterproofing en Estados Unidos.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <a href="https://sillyrepairs.com" target="_blank" rel="noopener">
+            <img src="Project1.png" alt="Proyecto Silly Repairs" />
+            <h3>Segundo Proyecto</h3>
+          </a>
+          <p>
+            En mi segundo proyecto mejoré mis habilidades en responsive design.
+            URL: sillyrepairs.com.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contáctame</h2>
+      <p>Si deseas comunicarte conmigo, puedes hacerlo por los siguientes medios:</p>
+      <ul class="contact-list">
+        <li>
+          <strong>Email:</strong>
+          <a href="mailto:cristo.cmdlr@gmail.com">cristo.cmdlr@gmail.com</a>
+        </li>
+        <li>
+          <strong>Teléfono:</strong>
+          <a href="tel:+5215545561878">+52 55 4556 1878</a>
+        </li>
+      </ul>
+      <div class="social-icons">
+        <a href="https://github.com/Silliness212" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
         </a>
-        <p>Fue mi primer proyecto de una página web responsiva que había y fue para una compañia privda de Estados Unidos llamada D&C Waterproofing.</p>
       </div>
-
-      <div class="project-card">
-        <a href="https://sillyrepairs.com" target="_blank">
-          <img src="Project1.png" alt="Project Two" />
-          <h3>Segundo Proyecto</h3>
-        </a>
-        <p>Esté fue mi segundo proyecto que he realizado y desde entonces han mejorado mis habilidades para hacer las páginas web responsivas y la URL es sillrepairs.com.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contáctame</h2>
-<p>Si deseas comunicarte conmigo, puedes hacerlo por los siguientes medios:</p>
-
-<ul>
-  <li><strong>Email:</strong> <a href="cristo.cmdlr@gmail.com">cristo.cmdlr@gmail.com</a></li>
-  <li><strong>Teléfono:</strong> <a href="tel:+521234567890">+52 55 4556 1878</a></li>
-</ul>
-
-<div class="social-icons">
-  <a href="https://github.com/Silliness212" target="_blank"><i class="fab fa-github"></i></a>
-</div>
-    
-  </section>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Christopher. All rights reserved.
+    &copy; 2025 Christopher Martinez de la Rosa. Todos los derechos reservados.
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-  <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+  <script src="index.js" defer></script>
 </body>
 </html>
